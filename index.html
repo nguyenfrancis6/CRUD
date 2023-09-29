@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD basics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <h1>Social Media App</h1>
+    <div class="container">
+      <!-- left side of container -->
+      <div class="left">
+        <form id="form">
+          <label for="">Write your post here</label>
+          <br />
+          <br />
+          <textarea name="" id="input" cols="30" rows="10"></textarea>
+          <br />
+          <br />
+          <div id="msg"></div>
+          <button type="submit">Post</button>
+        </form>
+      </div>
+      <!-- right side of container -->
+      <div class="right">
+        <h3>Your posts here</h3>
+        <div id="posts">
+          <div>
+            <p>Post 1</p>
+            <span class="options">
+              <i class="fas fa-edit" onClick="editPost(this)"></i>
+              <i class="fas fa-trash-alt" onClick="deletePost(this)"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
